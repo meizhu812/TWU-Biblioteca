@@ -1,0 +1,5 @@
+@import "reset.css";
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}

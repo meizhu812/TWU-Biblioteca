@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Biblioteca | Checkout Book</title>
+        <meta name="author" content="dyates, jleung, msargisson, pmaia, tfoster" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta name="description" content="Checkout a book from the TWU library" />
+        <link href="css/biblioteca-reset.css" type="text/css" rel="stylesheet"/>
+        <link href="css/checkout-book.css" type="text/css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar">
+            <a class="site-title" href="index.html">Biblioteca</a>
+            <a class="site-link" href="CheckoutBook.html">CheckoutBook</a>
+            <a class="site-link" href="login.html">Login</a>
+        </nav>
+        <main class="main-content">
+            <article>
+                <h1>Checkout Book</h1>
+                <form onsubmit="return false">
+                    <fieldset class="form-field-group">
+                        <label for="bookName">Book Title:</label>
+                        <input id="bookName" class="text-field" type="text" placeholder="Harry Potter and the Philosopher's Stone"/>
+                    </fieldset>
+                    <button id="checkout" class="button"><i class="fas fa-plus-circle"></i> Checkout</button>
+                </form>
+            </article>
+            <aside>
+                <figure>
+                    <img src="assets/book.jpg" alt="Book" class="book-image" />
+                </figure>
+            </aside>
+        </main>
+        <footer class="footer">
+            <p>&copy; TWU Trainer 2019</p>
+        </footer>
+        <div id="modal" class="modal-hide">
+            <div id="modal-shader" class="modal-shader"></div>
+            <div class="modal">
+                <button id="modal-close" class="modal-close"><i class="fas fa-times"></i></button>
+                <p id="modal-message"></p>
+            </div>
+        </div>
+        <script type="module" src="js/checkoutBook.js"></script>
+    </body>
+</html>

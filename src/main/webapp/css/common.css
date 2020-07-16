@@ -1,0 +1,139 @@
+@import "variables.css";
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: var(--font-light);
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0.75em;
+}
+
+.footer {
+    border-top: 1px solid var(--smog);
+    margin: 1rem 1rem 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+.main-content {
+    padding: 1rem;
+}
+
+.main-content aside {
+    text-align: center;
+}
+
+.main-content article {
+    margin-bottom: 1rem;
+}
+
+.form-field-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form-field-group label {
+    margin-bottom: 0.5em;
+    font-weight: var(--font-bold);
+}
+
+.navbar {
+    background: var(--coral);
+    padding: 1rem;
+    color: #fff;
+}
+
+.site-title {
+    font-size: 1.75rem;
+    text-transform: capitalize;
+    letter-spacing: 0.0625em;
+    text-decoration: none;
+    color: white;
+}
+
+.site-link {
+    font-size: 1rem;
+    letter-spacing: 0.0625em;
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+
+.site-link:hover {
+    color: #b3d4fc;
+}
+
+
+.button {
+    background-color: var(--grass);
+    border: 0;
+    border-radius: var(--round-corners);
+    color: white;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+    padding: 0.75em 2em;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+.text-field {
+    border-radius: var(--round-corners);
+    padding: 0.75em;
+    border: 1px solid var(--smog);
+}
+
+.text-field:focus {
+    border-color: var(--grass);
+}
+
+@media only screen and (min-width: 768px) {
+    .main-content {
+        display: flex;
+    }
+
+    .main-content article {
+        flex: 2;
+        margin-bottom: 0;
+    }
+
+    .main-content aside {
+        flex: 1;
+        padding: 0 1rem;
+    }
+
+    .form-field-group {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .form-field-group label {
+        margin-bottom: 0;
+        margin-right: 1rem;
+    }
+
+    .form-field-group input {
+        flex: 1;
+    }
+
+    .book-image {
+        max-width: none;
+    }
+}
